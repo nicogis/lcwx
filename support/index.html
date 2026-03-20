@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LCWX Support</title>
+
+<style>
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f4f7fb;
+  margin:0;
+  padding:0;
+  color:#1f2937;
+}
+
+.container{
+  max-width:800px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+.header{
+  background:linear-gradient(135deg,#2563eb,#3b82f6);
+  color:white;
+  padding:30px;
+  border-radius:16px;
+  margin-bottom:20px;
+}
+
+.section{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  margin-bottom:15px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+.lang-switch{
+  text-align:right;
+  margin-bottom:15px;
+}
+
+button{
+  padding:8px 12px;
+  border:none;
+  background:#2563eb;
+  color:white;
+  border-radius:6px;
+  cursor:pointer;
+  margin-left:5px;
+}
+
+.lang{
+  display:none;
+}
+
+.lang.active{
+  display:block;
+}
+</style>
+
+<script>
+function setLang(lang){
+  document.querySelectorAll('.lang').forEach(el=>el.classList.remove('active'));
+  document.getElementById(lang).classList.add('active');
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>LCWX – Support</h1>
+<p>We are here to help you</p>
+</div>
+
+<div class="lang-switch">
+<button onclick="setLang('en')">English</button>
+<button onclick="setLang('it')">Italiano</button>
+</div>
+
+<!-- ENGLISH -->
+<div id="en" class="lang active">
+
+<div class="section">
+<h2>Contact Support</h2>
+<p>
+If you need help, have questions or want to report a problem, feel free to contact us.
+</p>
+
+<p>
+📧 Email: <a href="mailto:lcwx@mclink.it">lcwx@mclink.it</a>
+</p>
+</div>
+
+<div class="section">
+<h2>About LCWX</h2>
+<p>
+LCWX – Lite Card Wallet eXpress is a simple app to store and scan your cards.
+All data is stored locally on your device.
+</p>
+</div>
+
+<div class="section">
+<h2>Common Topics</h2>
+<ul>
+<li>How to add a card</li>
+<li>How to scan a barcode</li>
+<li>Backup and restore data</li>
+<li>Import and export cards</li>
+</ul>
+</div>
+
+</div>
+
+<!-- ITALIANO -->
+<div id="it" class="lang">
+
+<div class="section">
+<h2>Contatta il supporto</h2>
+<p>
+Se hai bisogno di aiuto, domande o vuoi segnalare un problema, contattaci liberamente.
+</p>
+
+<p>
+📧 Email: <a href="mailto:lcwx@mclink.it">lcwx@mclink.it</a>
+</p>
+</div>
+
+<div class="section">
+<h2>Informazioni su LCWX</h2>
+<p>
+LCWX – Lite Card Wallet eXpress è un'app semplice per salvare e scansionare le tue carte.
+Tutti i dati sono memorizzati localmente sul dispositivo.
+</p>
+</div>
+
+<div class="section">
+<h2>Argomenti comuni</h2>
+<ul>
+<li>Come aggiungere una carta</li>
+<li>Come scansionare un codice</li>
+<li>Backup e ripristino dati</li>
+<li>Importazione ed esportazione</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
