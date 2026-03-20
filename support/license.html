@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LCWX Licenses</title>
+
+<style>
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f4f7fb;
+  margin:0;
+  padding:0;
+  color:#1f2937;
+}
+
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+.header{
+  background:linear-gradient(135deg,#2563eb,#3b82f6);
+  color:white;
+  padding:30px;
+  border-radius:16px;
+  margin-bottom:20px;
+}
+
+.section{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  margin-bottom:15px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+.lang-switch{
+  text-align:right;
+  margin-bottom:15px;
+}
+
+button{
+  padding:8px 12px;
+  border:none;
+  background:#2563eb;
+  color:white;
+  border-radius:6px;
+  cursor:pointer;
+  margin-left:5px;
+}
+
+.lang{
+  display:none;
+}
+
+.lang.active{
+  display:block;
+}
+
+code{
+  background:#eef2ff;
+  padding:2px 6px;
+  border-radius:6px;
+}
+</style>
+
+<script>
+function setLang(lang){
+  document.querySelectorAll('.lang').forEach(el=>el.classList.remove('active'));
+  document.getElementById(lang).classList.add('active');
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>LCWX – Open Source Licenses</h1>
+<p>Third-party libraries used in this application</p>
+</div>
+
+<div class="lang-switch">
+<button onclick="setLang('en')">English</button>
+<button onclick="setLang('it')">Italiano</button>
+</div>
+
+<!-- ENGLISH -->
+<div id="en" class="lang active">
+
+<div class="section">
+<h2>Overview</h2>
+<p>
+LCWX uses third-party open source libraries to provide core functionality.
+These libraries are distributed under their respective licenses.
+</p>
+</div>
+
+<div class="section">
+<h2>ZXing.Net.Maui</h2>
+<p>
+Library used for barcode and QR code scanning.
+</p>
+
+<p>
+License: MIT License
+</p>
+
+<p>
+Copyright (c) ZXing.Net.Maui contributors
+</p>
+
+<p>
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction...
+</p>
+</div>
+
+<div class="section">
+<h2>sqlite-net-pcl</h2>
+<p>
+Library used for local SQLite database access.
+</p>
+
+<p>
+License: MIT License
+</p>
+
+<p>
+Copyright (c) sqlite-net contributors
+</p>
+
+<p>
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction...
+</p>
+</div>
+
+<div class="section">
+<h2>SQLite</h2>
+<p>
+SQLite is in the public domain and free for use for any purpose.
+</p>
+</div>
+
+</div>
+
+<!-- ITALIANO -->
+<div id="it" class="lang">
+
+<div class="section">
+<h2>Panoramica</h2>
+<p>
+LCWX utilizza librerie open source di terze parti per fornire funzionalità principali.
+Queste librerie sono distribuite secondo le rispettive licenze.
+</p>
+</div>
+
+<div class="section">
+<h2>ZXing.Net.Maui</h2>
+<p>
+Libreria utilizzata per la scansione di barcode e QR code.
+</p>
+
+<p>
+Licenza: MIT License
+</p>
+
+<p>
+Copyright (c) ZXing.Net.Maui contributors
+</p>
+
+<p>
+È concessa gratuitamente a chiunque ottenga una copia del software...
+</p>
+</div>
+
+<div class="section">
+<h2>sqlite-net-pcl</h2>
+<p>
+Libreria utilizzata per l'accesso al database SQLite locale.
+</p>
+
+<p>
+Licenza: MIT License
+</p>
+
+<p>
+Copyright (c) sqlite-net contributors
+</p>
+
+<p>
+È concessa gratuitamente a chiunque ottenga una copia del software...
+</p>
+</div>
+
+<div class="section">
+<h2>SQLite</h2>
+<p>
+SQLite è di pubblico dominio ed è utilizzabile liberamente per qualsiasi scopo.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
