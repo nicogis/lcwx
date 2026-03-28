@@ -11,7 +11,7 @@ Portafoglio carte semplice, privato e completamente offline.
 ## 📱 Store
 
 * **Apple App Store**: https://apps.apple.com/it/app/lcwx-portafoglio-carte/id6760918089
-* **Google Play**: https://play.google.com/store/apps/details?id=your.app.id *(in arrivo)*
+* **Google Play**: https://play.google.com/store/apps/details?id=eu.studioat.lcwx
 
 ---
 
@@ -21,7 +21,7 @@ Portafoglio carte semplice, privato e completamente offline.
 [![Privacy](https://img.shields.io/badge/Privacy-Policy-4f46e5?style=for-the-badge)](https://lcwx.nicogis.it/privacy)
 [![Support](https://img.shields.io/badge/Support-lcwx%40mclink.it-0f172a?style=for-the-badge)](mailto:lcwx@mclink.it)
 [![App Store](https://img.shields.io/badge/App%20Store-Download-black?style=for-the-badge)](https://apps.apple.com/it/app/lcwx-portafoglio-carte/id6760918089)
-[![Google Play](https://img.shields.io/badge/Google%20Play-Coming%20Soon-1f2937?style=for-the-badge)](https://play.google.com/store/apps/details?id=your.app.id)
+[![Google Play](https://img.shields.io/badge/Google%20Play-Download-1f2937?style=for-the-badge)](https://play.google.com/store/apps/details?id=eu.studioat.lcwx)
 
 ---
 
