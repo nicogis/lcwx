@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lite Card Wallet eXpress - Hilfe</title>
+  <style>
+    :root {
+      --bg: #0b0b12;
+      --panel: #17171f;
+      --panel-2: #20202a;
+      --text: #f3f3f7;
+      --muted: #b8b8c7;
+      --accent: #8b5cf6;
+      --accent-2: #c4b5fd;
+      --border: #2c2c39;
+      --ok: #34d399;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: linear-gradient(180deg, #0c0c14 0%, #10101a 100%); color: var(--text); line-height: 1.55; }
+    a { color: var(--accent-2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(980px, calc(100% - 32px)); margin: 0 auto; }
+    .topbar { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(14px); background: rgba(11, 11, 18, 0.78); border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .topbar-inner { width: min(980px, calc(100% - 32px)); margin: 0 auto; display: flex; align-items: center; justify-content: center; padding: 14px 0; }
+    .brand { font-weight: 800; letter-spacing: 0.2px; }
+    .hero { padding: 56px 0 28px; }
+    .badge { display: inline-block; padding: 8px 12px; border-radius: 999px; background: rgba(139, 92, 246, 0.14); border: 1px solid rgba(139, 92, 246, 0.35); color: var(--accent-2); font-size: 14px; margin-bottom: 14px; }
+    h1 { font-size: clamp(32px, 5vw, 48px); line-height: 1.08; margin: 0 0 14px; }
+    .lead { max-width: 720px; color: var(--muted); font-size: 18px; margin: 0; }
+    .top-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 20px; margin: 30px 0 22px; }
+    .card { background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%); border: 1px solid var(--border); border-radius: 24px; padding: 24px; box-shadow: 0 14px 40px rgba(0, 0, 0, 0.22); }
+    .card h2 { margin-top: 0; font-size: 22px; }
+    .list { margin: 0; padding-left: 18px; color: var(--muted); }
+    .list li + li { margin-top: 10px; }
+    .quick-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
+    .quick-links a { display: block; padding: 14px 16px; border-radius: 16px; background: rgba(139, 92, 246, 0.08); border: 1px solid rgba(139, 92, 246, 0.18); color: var(--text); font-weight: 600; }
+    .section { margin: 24px 0; }
+    .section h2 { font-size: 28px; margin-bottom: 16px; }
+    .faq { display: grid; gap: 14px; }
+    details { background: #15151d; border: 1px solid var(--border); border-radius: 18px; padding: 16px 18px; }
+    summary { cursor: pointer; font-weight: 700; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    details p, details ul { color: var(--muted); margin-bottom: 0; }
+    .steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .step { background: #15151d; border: 1px solid var(--border); border-radius: 20px; padding: 20px; }
+    .step-num { width: 36px; height: 36px; display: inline-grid; place-items: center; border-radius: 999px; background: var(--accent); font-weight: 800; margin-bottom: 14px; }
+    .note { padding: 16px 18px; border-radius: 18px; background: rgba(52, 211, 153, 0.08); border: 1px solid rgba(52, 211, 153, 0.2); color: #d9fff0; }
+    .footer { padding: 26px 0 48px; color: var(--muted); font-size: 14px; }
+    code { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); padding: 2px 8px; border-radius: 8px; color: #fff; }
+    .store-buttons { display:flex; gap:12px; flex-wrap:wrap; margin-top:8px; }
+    .store-btn { display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius:14px; border:1px solid var(--border); background: linear-gradient(180deg, #1b1b26, #12121a); color:#fff; text-decoration:none; font-weight:700; box-shadow: 0 10px 24px rgba(0,0,0,.25); transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease; }
+    .store-btn:hover { transform: translateY(-2px); box-shadow:0 16px 36px rgba(0,0,0,.35); border-color: rgba(139,92,246,.5); }
+    .store-btn small { display:block; font-weight:600; color:var(--muted); }
+    .store-btn .title { line-height:1.1; }
+    .store-btn.apple { border-color: rgba(255,255,255,.12); }
+    .store-btn.google { border-color: rgba(139,92,246,.35); }
+    .store-icon { width:22px; height:22px; display:inline-block; }
+    @media (max-width: 820px) { .top-grid, .steps { grid-template-columns: 1fr; } .quick-links { grid-template-columns: 1fr; } .hero { padding-top: 32px; } .brand { text-align: center; } }
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="topbar-inner"><div class="brand">Lite Card Wallet eXpress · Hilfe</div></div></div>
+  <main><div class="wrap">
+    <header class="hero">
+      <div class="badge">Offizielle Hilfe</div>
+      <h1>Lite Card Wallet eXpress</h1>
+      <p class="lead">Kurzanleitung zum Hinzufügen, Verwalten und Anzeigen deiner Kundenkarten auf einfache Weise. Hier findest du die wichtigsten Funktionen, häufige Fragen und nützliche Hinweise.</p>
+    </header>
+    <section class="section" id="why-de"><div class="card"><h2>Warum diese App erstellt wurde</h2><p>Lite Card Wallet eXpress wurde mit einer einfachen Idee entwickelt: eine Karten-Wallet anzubieten, die <strong>leicht, privat und unkompliziert</strong> ist.</p><ul class="list"><li><strong>Kein Konto</strong>: keine Registrierung erforderlich.</li><li><strong>Keine Werbung</strong>: saubere Nutzung ohne Ablenkungen.</li><li><strong>Kostenlos</strong>: alle Funktionen sind ohne Kosten verfügbar.</li><li><strong>Keine externen Dienste</strong>: keine Cloud und keine Server-Abhängigkeiten.</li><li><strong>Alles bleibt auf dem Gerät</strong>: die Daten bleiben immer lokal.</li></ul></div></section>
+    <section class="top-grid"><div class="card"><h2>In dieser Hilfe</h2><div class="quick-links"><a href="#getting-started-de">Erste Schritte</a><a href="#daily-use-de">Tägliche Nutzung</a><a href="#extra-fields-de">Zusatzfelder</a><a href="#images-de">Bildverwaltung</a><a href="#settings-de">Einstellungen</a><a href="#backup-de">Backup und Wiederherstellung</a><a href="#faq-de">Häufige Fragen</a><a href="#support-de">Support</a></div></div><div class="card"><h2>Was du tun kannst</h2><ul class="list"><li>Karten mit Barcode oder QR-Code speichern.</li><li>Sie nach Kategorien organisieren und ihre Reihenfolge verwalten.</li><li>Karten als Favoriten markieren.</li><li>Benutzerdefinierte Felder wie Ablaufdaten oder Notizen hinzufügen.</li><li>Ein lokales Backup exportieren und importieren.</li><li>Verfügbare Sprachen: Italienisch, Englisch, Spanisch, Deutsch, Französisch, Russisch und Portugiesisch.</li></ul></div></section>
+    <section class="section" id="getting-started-de"><h2>Erste Schritte</h2><div class="steps"><div class="step"><div class="step-num">1</div><h3>Karte hinzufügen</h3><p>Tippe in deiner Wallet auf die Schaltfläche <strong>+</strong>, um eine neue Karte zu erstellen.</p></div><div class="step"><div class="step-num">2</div><h3>Code eingeben</h3><p>Du kannst den Code manuell eingeben oder die Funktion <strong>Scannen</strong> verwenden.</p></div><div class="step"><div class="step-num">3</div><h3>Speichern und verwenden</h3><p>Nach dem Speichern erscheint die Karte in der Hauptliste und ist sofort einsatzbereit.</p></div></div></section>
+    <section class="section" id="daily-use-de"><h2>Tägliche Nutzung</h2><div class="faq"><details open><summary>Wie zeige ich eine Karte an der Kasse?</summary><p>Öffne die Karte in der Hauptliste. In der Detailansicht wird der Code groß angezeigt, damit er leichter gescannt werden kann.</p></details><details><summary>Kann ich die Bildschirmhelligkeit erhöhen?</summary><p>Ja. In der Kartenansicht kannst du die Helligkeit anpassen. In den Einstellungen kannst du auch die automatische Helligkeitserhöhung aktivieren, wenn eine Karte angezeigt wird.</p></details><details><summary>Wie bearbeite oder verwalte ich eine vorhandene Karte?</summary><p>Du kannst eine Karte auf verschiedene Arten bearbeiten. In der Kartenansicht gibt es eine Schaltfläche mit einem <strong>Stift</strong>. Alternativ kannst du in der Hauptliste <strong>Wischgesten</strong> auf der Karte verwenden.</p><ul class="list"><li><strong>Von links nach rechts wischen</strong>: zeigt <strong>Favorit</strong> und <strong>Bearbeiten</strong>.</li><li><strong>Von rechts nach links wischen</strong>: zeigt nur <strong>Löschen</strong>.</li></ul><p>Der Status <strong>Favorit</strong> kann auch direkt im Bearbeitungsbildschirm gesetzt werden.</p></details><details><summary>Wie markiere ich eine Karte als Favorit?</summary><p>Du kannst eine Karte direkt im Bearbeitungsbildschirm als <strong>Favorit</strong> markieren oder die schnellen Wischaktionen in der Kartenliste verwenden.</p></details></div></section>
+    <section class="section" id="extra-fields-de"><h2>Zusatzfelder</h2><div class="card"><p>Mit Zusatzfeldern kannst du zusätzliche Informationen zu einer Karte speichern, zum Beispiel:</p><ul class="list"><li>Ablaufdatum</li><li>Mitgliedsnummer</li><li>Benutzerdefinierte Notizen</li><li>Nützliche Informationen zum Merken</li></ul><p>Um sie hinzuzufügen, öffne die Kartenbearbeitung und verwende den Bereich <strong>Zusatzfelder</strong>.</p></div></section>
+    <section class="section" id="images-de"><h2>Bildverwaltung</h2><div class="card"><p>Die App verwendet keine externen Dienste: Bilder (Logo, Vorder-/Rückseite) müssen <strong>mit der Kamera aufgenommen oder aus der Galerie ausgewählt</strong> werden.</p><ul class="list"><li>Wenn kein Bild gesetzt ist, wird ein <strong>automatisches Logo</strong> angezeigt (Farbe + erster Buchstabe des Titels).</li><li>Du kannst es ersetzen, indem du auf das Logo tippst und ein Foto auswählst.</li><li>Nachdem ein Bild zugeordnet wurde, kannst du es im Bearbeitungsmodus antippen, um es <strong>zu bearbeiten oder zu entfernen</strong>.</li><li>Im Zuschneidemodus kannst du das Bild <strong>zoomen und verschieben</strong>; der Zuschneiderahmen entspricht dem <strong>Seitenverhältnis</strong> des Steuerelements.</li><li>Du kannst auch <strong>Vorder- und Rückseitenbilder</strong> mit demselben Verhalten zuweisen.</li><li>In der Ansicht wird das Logo bzw. Vorder-/Rückseitenbild beim Antippen <strong>im Vollbild</strong> angezeigt.</li></ul></div></section>
+    <section class="section" id="settings-de"><h2>Einstellungen</h2><div class="card"><ul class="list"><li><strong>Bildschirm aktiv halten</strong>: während du eine Karte anzeigst, geht der Bildschirm nicht in den Standby.</li><li><strong>Helligkeit erhöhen</strong>: verwendet beim Anzeigen von Karten eine Standardhelligkeit. Wenn deaktiviert, kann die Helligkeit auch nicht für einzelne Karten eingestellt werden.</li><li><strong>Neuordnung aktivieren</strong>: ermöglicht das manuelle Umordnen von Karten per Ziehen.</li><li><strong>Gruppieren</strong>: zeigt Karten nach Kategorien statt in einer einzigen Liste.</li><li><strong>Kategorien neu ordnen</strong>: ermöglicht das Verschieben von Kategorien per Ziehen, nur wenn Gruppierung aktiv ist.</li><li><strong>Zusatzfelder beibehalten</strong>: behält Zusatzfelder auch dann bei, wenn sie von keiner Karte mehr verwendet werden. Wenn deaktiviert, werden ungenutzte Felder automatisch entfernt.</li></ul></div></section>
+    <section class="section" id="backup-de"><h2>Backup und Wiederherstellung</h2><div class="card"><p><strong>Backup exportieren</strong> erstellt eine <code>.zip</code>-Datei mit den App-Daten.</p><p><strong>Backup importieren</strong> stellt zuvor exportierte Daten wieder her.</p><div class="note">Nach dem Import musst du die App vollständig schließen und erneut öffnen. Beim erneuten Öffnen kann sich die App automatisch schließen: das ist normal. Öffne sie danach noch einmal, dann ist die Wiederherstellung abgeschlossen.</div></div></section>
+    <section class="section" id="faq-de"><h2>Häufige Fragen</h2><div class="faq"><details><summary>Benötigt die App eine Internetverbindung?</summary><p>Nein. Die App funktioniert vollständig offline: alle Karten werden lokal auf dem Gerät gespeichert und verwaltet.</p></details><details><summary>Werden meine Daten online geteilt?</summary><p>Nein. Alle Daten bleiben auf dem Gerät und werden nicht online geteilt. Dieses Verhalten entspricht der Datenschutzerklärung.</p></details><details><summary>Warum liest das Lesegerät im Geschäft den Code nicht?</summary><ul class="list"><li>Erhöhe die Helligkeit.</li><li>Prüfe, ob der Codetyp korrekt ist.</li><li>Stelle sicher, dass die eingegebene Nummer mit der Originalkarte übereinstimmt.</li><li>Zeige wenn möglich ein Foto der Originalkarte.</li></ul></details><details><summary>Kann ich meine Karten neu anordnen?</summary><p>Ja. Die Standardsortierung berücksichtigt mehrere Faktoren: zuerst Favoriten, dann die am häufigsten verwendeten Karten und danach die zuletzt geöffneten Karten.</p><p>Wenn du eine Karte manuell an eine bestimmte Position ziehst, erhält sie eine <strong>benutzerdefinierte Reihenfolge</strong>, die Vorrang vor der automatischen Sortierung hat.</p><p>Wenn du zum normalen Verhalten zurückkehren möchtest, kannst du die Option <strong>Neu ordnen</strong> verwenden, um die gespeicherte manuelle Position zu entfernen.</p></details></div></section>
+    <section class="section" id="support-de"><h2>Support</h2><div class="card"><p>Falls etwas nicht wie erwartet funktioniert, bereite vor dem Kontakt mit dem Support bitte folgende Informationen vor:</p><ul class="list"><li>Gerätemodell</li><li>Android-Version</li><li>App-Version</li><li>Kurze Problembeschreibung</li><li>Schritte zur Reproduktion</li></ul><p>Für Support schreibe an <code>lcwx@mclink.it</code>.</p><p>Du kannst auch die Stores besuchen:</p><div class="store-buttons"><a class="store-btn apple" href="https://apps.apple.com/it/app/lcwx-portafoglio-carte/id6760918089" target="_blank" rel="noopener noreferrer"><span class="store-icon"></span><span class="title"><small>Laden im</small>App Store</span></a><a class="store-btn google" href="https://play.google.com/store/apps/details?id=eu.studioat.lcwx" target="_blank" rel="noopener noreferrer"><span class="store-icon">▶</span><span class="title"><small>Erhältlich bei</small>Google Play</span></a></div></div></section>
+    <footer class="footer"><p>© Lite Card Wallet eXpress · Hilfeseite</p></footer>
+  </div></main>
+</body>
+</html>
