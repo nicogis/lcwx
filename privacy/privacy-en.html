@@ -1,136 +1,325 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LCWX – Lite Card Wallet eXpress Privacy Policy</title>
-<style>
-body{font-family:Arial;background:#f4f7fb;margin:0;color:#1f2937}
-.container{max-width:940px;margin:auto;padding:30px}
-.section{background:#fff;padding:25px;border-radius:14px;margin-bottom:18px}
-h2{margin-top:0}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LCWX – Lite Card Wallet eXpress Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for LCWX – Lite Card Wallet eXpress">
+  <meta name="robots" content="index,follow">
+  <style>
+    :root{
+      --bg:#f4f7fb;
+      --surface:#ffffff;
+      --text:#1f2937;
+      --muted:#6b7280;
+      --primary:#2563eb;
+      --primary2:#3b82f6;
+      --border:#e5e7eb;
+      --shadow:0 6px 18px rgba(0,0,0,.05);
+      --radius:14px;
+      --max:940px;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      font-family:Arial,Helvetica,sans-serif;
+      background:var(--bg);
+      margin:0;
+      padding:0;
+      color:var(--text);
+      line-height:1.7;
+    }
+
+    .container{
+      max-width:var(--max);
+      margin:auto;
+      padding:30px 20px 60px;
+    }
+
+    .header{
+      background:linear-gradient(135deg,var(--primary),var(--primary2));
+      color:white;
+      padding:40px 30px;
+      border-radius:18px;
+      margin-bottom:24px;
+    }
+
+    .header h1{
+      margin:0;
+      font-size:2rem;
+      line-height:1.2;
+    }
+
+    .header p{
+      margin:10px 0 0;
+      opacity:.96;
+    }
+
+    .section{
+      background:var(--surface);
+      padding:25px;
+      border-radius:var(--radius);
+      margin-bottom:18px;
+      box-shadow:var(--shadow);
+    }
+
+    .section h2{
+      margin-top:0;
+      font-size:1.2rem;
+      line-height:1.35;
+    }
+
+    ul{
+      padding-left:20px;
+    }
+
+    a{
+      color:var(--primary);
+      text-decoration:none;
+    }
+
+    a:hover{
+      text-decoration:underline;
+    }
+
+    .footer{
+      text-align:center;
+      margin-top:40px;
+      color:var(--muted);
+      font-size:.9rem;
+    }
+
+    @media (max-width: 640px){
+      .header h1{
+        font-size:1.65rem;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="container">
+  <div class="container">
+    <div class="header">
+      <h1>LCWX – Lite Card Wallet eXpress</h1>
+      <p>Privacy Policy</p>
+      <p>Last updated: March 11, 2026</p>
+    </div>
 
-<h1>LCWX – Lite Card Wallet eXpress</h1>
-<p>Privacy Policy</p>
-<p>Last updated: March 30, 2026</p>
+    <div class="section">
+      <h2>1. Data Controller</h2>
+      <p>
+        The data controller for LCWX – Lite Card Wallet eXpress is:
+      </p>
+      <p>
+        <strong>Domenico Ciavarella</strong><br>
+        Email: <a href="mailto:lcwx@mclink.it">lcwx@mclink.it</a>
+      </p>
+    </div>
 
-<div class="section">
-<h2>1. Data Controller</h2>
-<p>Domenico Ciavarella<br>lcwx@mclink.it</p>
-</div>
+    <div class="section">
+      <h2>2. Information We Process</h2>
+      <p>
+        LCWX is designed to operate primarily with data stored locally on the user's device.
+        The application may process the following information:
+      </p>
+      <ul>
+        <li>Card names entered by the user</li>
+        <li>Barcode or QR code values scanned or manually entered</li>
+        <li>Optional images or logos associated with cards</li>
+        <li>Temporary technical data required to perform barcode scanning</li>
+      </ul>
+    </div>
 
-<div class="section">
-<h2>2. Data processed</h2>
-<ul>
-<li>Card names</li>
-<li>Barcode / QR values</li>
-<li>Optional images</li>
-<li>Temporary technical data</li>
-</ul>
-</div>
+    <div class="section">
+      <h2>3. Camera Access</h2>
+      <p>
+        LCWX requires access to the device camera solely for scanning barcodes and QR codes.
+      </p>
+      <p>
+        Camera access is used in real time and no images or videos are recorded, stored, or transmitted to external servers.
+      </p>
+    </div>
 
-<div class="section">
-<h2>3. Camera</h2>
-<p>Used only for scanning, no storage or transmission.</p>
-</div>
+    <div class="section">
+      <h2>4. Application Permissions</h2>
+      <p>
+        LCWX may request certain device permissions only to provide its features.
+      </p>
+      <ul>
+        <li>
+          <strong>Camera</strong><br>
+          Used exclusively for scanning barcodes and QR codes.
+        </li>
+        <li>
+          <strong>Photos / Files (optional)</strong><br>
+          Used only when the user chooses an image or logo for a card, or uses import/export features.
+        </li>
+      </ul>
+      <p>
+        LCWX does not access device data without user interaction or explicit permission.
+      </p>
+    </div>
 
-<div class="section">
-<h2>4. Permissions</h2>
-<ul>
-<li>Camera</li>
-<li>Files / Photos (user initiated)</li>
-</ul>
-</div>
+    <div class="section">
+      <h2>5. Data Storage</h2>
+      <p>
+        All card information is stored locally on the user's device using local application storage and a SQLite database.
+      </p>
+      <p>
+        LCWX does not require user accounts and does not synchronize data with external servers in its current version.
+      </p>
+    </div>
 
-<div class="section">
-<h2>5. Storage</h2>
-<p>All data stored locally (SQLite).</p>
-</div>
+    <div class="section">
+      <h2>6. Purpose of Data Processing</h2>
+      <p>
+        Data is processed solely to provide the following functionality:
+      </p>
+      <ul>
+        <li>Scanning barcodes and QR codes</li>
+        <li>Saving and organizing user cards</li>
+        <li>Displaying stored card codes when needed</li>
+        <li>Associating optional images or logos with cards</li>
+        <li>Allowing users to back up, export, import, and transfer their data manually</li>
+      </ul>
+    </div>
 
-<div class="section">
-<h2>6. Purpose</h2>
-<ul>
-<li>Card management</li>
-<li>Code display</li>
-<li>Manual backup</li>
-</ul>
-</div>
+    <div class="section">
+      <h2>7. Data Sharing</h2>
+      <p>
+        LCWX does not sell, rent, or share user data with third parties.
+      </p>
+      <p>
+        The application does not include advertising platforms, marketing services, or user profiling tools.
+      </p>
+    </div>
 
-<div class="section">
-<h2>7. Sharing</h2>
-<p>No data shared with third parties.</p>
-</div>
+    <div class="section">
+      <h2>8. Data Retention</h2>
+      <p>
+        All data remains on the device until the user decides to remove it.
+      </p>
+      <ul>
+        <li>Cards can be deleted within the application</li>
+        <li>Associated images can be removed</li>
+        <li>Exported backup files remain where the user saves them until the user removes them</li>
+        <li>Uninstalling the application removes locally stored data according to the operating system behavior</li>
+      </ul>
+    </div>
 
-<div class="section">
-<h2>8. Retention</h2>
-<p>Data remains until user deletes it.</p>
-</div>
+    <div class="section">
+      <h2>9. Data Import and Export</h2>
+      <p>
+        LCWX may provide optional features that allow users to export their data for backup or transfer purposes and to import previously exported data.
+      </p>
+      <p>
+        Exported data may be packaged as a ZIP archive that can contain the local SQLite database and any images or logos associated with saved cards.
+      </p>
+      <p>
+        Import and export operations are initiated manually by the user. LCWX does not automatically transmit exported files to external servers or third parties.
+      </p>
+      <p>
+        Once exported, the storage, sharing, and protection of the ZIP archive depend on the user and the services or applications used to manage the file.
+      </p>
+    </div>
 
-<div class="section">
-<h2>9. Import / Export</h2>
-<p>Manual export via ZIP file.</p>
-</div>
+    <div class="section">
+      <h2>10. Security</h2>
+      <p>
+        LCWX stores card data locally on the user's device. The application does not implement additional authentication or encryption mechanisms beyond those provided by the operating system.
+      </p>
+      <p>
+        The security of stored data therefore depends on device security features such as screen lock, biometrics, and operating system encryption.
+      </p>
+      <p>
+        If the user exports data, the user is responsible for deciding how and where the exported ZIP archive is stored or shared.
+      </p>
+    </div>
 
-<div class="section">
-<h2>10. Security</h2>
-<p>Depends on device security.</p>
-</div>
+    <div class="section">
+      <h2>11. Data Loss Disclaimer</h2>
+      <p>
+        LCWX stores user data locally on the device. While reasonable efforts may be made to ensure the reliability of the application, no guarantee is provided regarding the preservation, availability, or recovery of user data.
+      </p>
+      <p>
+        Users are responsible for maintaining backups of their data using the export functionality provided by the application.
+      </p>
+      <p>
+        LCWX – Lite Card Wallet eXpress and its developer shall not be held liable for any loss of data resulting from device failure, software errors, accidental deletion, import/export issues, corrupted files, or other circumstances beyond reasonable control.
+      </p>
+    </div>
 
-<div class="section">
-<h2>11. Data responsibility</h2>
-<p>User is responsible for backups.</p>
-</div>
+    <div class="section">
+      <h2>12. Tracking and Analytics</h2>
+      <p>
+        LCWX does not track users across apps or websites and does not use advertising identifiers.
+      </p>
+      <p>
+        The application does not include analytics, profiling, or user tracking technologies in its current version.
+      </p>
+    </div>
 
-<div class="section">
-<h2>12. Tracking</h2>
-<p>No tracking or analytics.</p>
-</div>
+    <div class="section">
+      <h2>13. App update check</h2>
+      <p>
+        LCWX may perform an Internet connection solely to check whether a newer version of the application is available.
+      </p>
+      <p>
+        This check is performed by downloading a simple remote file (e.g. JSON) containing information about the latest available version.
+      </p>
+      <ul>
+        <li>no personal data is collected</li>
+        <li>no user data is transmitted</li>
+        <li>no tracking is performed</li>
+      </ul>
+      <p>
+        The check is performed occasionally and not continuously.
+      </p>
+      <p>
+        The connection is used only to inform the user about available updates and, if needed, redirect them to the store to install or update the application.
+      </p>
+    </div>
 
-<div class="section">
-<h2>13. App update check</h2>
-<p>
-LCWX may perform an Internet connection solely to check if a newer version is available.
-</p>
-<p>
-This is done by downloading a simple remote file (JSON).
-</p>
-<ul>
-<li>no personal data collected</li>
-<li>no user data transmitted</li>
-<li>no tracking</li>
-</ul>
-<p>
-The check is performed occasionally and not continuously.
-</p>
-<p>
-Used only to notify updates and redirect to the store.
-</p>
-</div>
+    <div class="section">
+      <h2>14. Children</h2>
+      <p>
+        LCWX is not specifically directed to children and does not knowingly collect personal information from children.
+      </p>
+    </div>
 
-<div class="section">
-<h2>14. Children</h2>
-<p>No intentional data collection from children.</p>
-</div>
+    <div class="section">
+      <h2>15. Third-Party Libraries</h2>
+      <p>
+        LCWX may use third-party software libraries required for technical functionality, such as barcode scanning, local database management, ZIP creation, file access, or user interface components.
+      </p>
+      <p>
+        These libraries are used solely to provide app functionality and not for advertising, tracking, or analytics purposes.
+      </p>
+    </div>
 
-<div class="section">
-<h2>15. Third-party libraries</h2>
-<p>Used only for technical functionality.</p>
-</div>
+    <div class="section">
+      <h2>16. Changes to this Policy</h2>
+      <p>
+        This Privacy Policy may be updated periodically to reflect technical, legal, or functional changes to the application.
+      </p>
+      <p>
+        Updates will be published on this page together with the revised "Last updated" date.
+      </p>
+    </div>
 
-<div class="section">
-<h2>16. Changes</h2>
-<p>This policy may be updated.</p>
-</div>
+    <div class="section">
+      <h2>17. Contact</h2>
+      <p>
+        For any questions regarding this Privacy Policy you can contact:
+      </p>
+      <p>
+        Email: <a href="mailto:lcwx@mclink.it">lcwx@mclink.it</a>
+      </p>
+    </div>
 
-<div class="section">
-<h2>17. Contact</h2>
-<p>lcwx@mclink.it</p>
-</div>
-
-</div>
+    <div class="footer">
+      LCWX – Lite Card Wallet eXpress
+    </div>
+  </div>
 </body>
 </html>
