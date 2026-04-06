@@ -6,7 +6,7 @@ Portafoglio carte semplice, privato e completamente offline.
 
 * **Help**: https://lcwx.nicogis.it/help/
 * **Privacy Policy**: https://lcwx.nicogis.it/privacy
-* **Support**: mailto:lcwx@mclink.it
+* **Support**: https://lcwx.nicogis.it/support/
 
 ## 📱 Store
 
